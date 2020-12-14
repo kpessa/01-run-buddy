@@ -97,3 +97,36 @@ section {
   bottom: 120px;
   right: 140px;
 }
+
+.hero-form h3 {
+  font-size: 1.5em;
+}
+
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
+.hero-form .form-input {
+  border:solid 1px #024e76;
+  display:block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width:100%;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.hero-form label {
+  margin: 0 5px;
+}
+
+.hero-form button {
+  color: #fce138;
+  background-color: #024e76;
+  border: none;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+}
