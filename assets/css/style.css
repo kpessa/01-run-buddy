@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+/*  <body> */
+
+body {
+  color: #39a6b2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 /*  <header> */
 header {
   padding: 20px 35px;
@@ -64,9 +71,29 @@ footer a {
   color: #024e76; 
 }
 
-/*  <body> */
+/*  <section>  */
+section {
+  padding: 60px;
+}
 
-body {
-  color: #39a6b2;
-  font-family: Helvetica, Arial, sans-serif;
+/* Hero Style Start */
+
+.hero {
+  height: 600px;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+/* Hero Style End */
+
+.hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  border: solid 3px #024e76;
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
 }
