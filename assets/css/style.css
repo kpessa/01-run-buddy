@@ -235,6 +235,19 @@ section {
 
 /* End Your Trainers section */
 
+/* Start Reach Out section */
+
+.contact {
+  text-align: center;
+  background-color: #024e76;
+}
+
+.contact h2 {
+  color: #fce138;
+}
+
+/* End Reach Out section */
+
 /* Utility Classes */
 
 .section-title {
