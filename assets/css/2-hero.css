@@ -1,0 +1,67 @@
+/* Hero Style Start */
+
+.hero {
+  height: 600px;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+/* Hero Style End */
+
+/* Hero Form Start */
+
+.hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  border: solid 3px #024e76;
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
+}
+
+.hero-form h3 {
+  font-size: 1.5em;
+}
+
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
+.text-labels {
+  font-weight: bold;
+}
+
+.form-input {
+  border:solid 1px #024e76;
+  display:block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width:100%;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.radio-yes {
+  margin-left: 10px;
+}
+
+.hero-form label {
+  margin: 0 5px;
+}
+
+.hero-form button {
+  color: #fce138;
+  background-color: #024e76;
+  border: none;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Hero Form End */
