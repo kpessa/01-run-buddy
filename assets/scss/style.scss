@@ -57,7 +57,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -91,8 +91,6 @@ footer {
   }
 }
 
-
-
 // ---------------------------------------------------------
 //                  2 - Hero section
 // ---------------------------------------------------------
@@ -104,6 +102,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 // HERO CALL TO ACTION div
@@ -113,7 +112,7 @@ footer {
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.2;
 
   h2 {
     font-style: italic;
@@ -129,7 +128,7 @@ footer {
   margin: 3.5%;
   background-color: #fce138;
   padding: 20px;
-  width: 500px;
+  // width: 500px;
   color: $clr-darkBlue;
   border: solid 3px $clr-darkBlue;
   bottom: 120px;
@@ -382,7 +381,7 @@ footer {
   margin: 0 auto 35px auto;
   width: 50%;
   text-align: center;
-  font-size: 55px;
+  font-size: 48px;
   color: $clr-darkBlue;
   border-bottom: 3px solid;
 }
@@ -391,3 +390,25 @@ footer {
 .secondary-border { border-color: $clr-lightBlue; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
+
+// MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 
+@media screen and (max-width: 980px) {
+  
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied on any screen between 768px and 575px */
+    font-size: 80px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    /* this will be applied on any screen smaller than 575px */
+    font-size: 100px;
+  }
+}
