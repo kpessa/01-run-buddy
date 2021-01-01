@@ -96,7 +96,6 @@ footer a {
 }
 
 .hero {
-  height: 600px;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   display: -webkit-box;
@@ -314,7 +313,7 @@ footer a {
   color: #fce138;
 }
 
-.contact .contact-info {
+.contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,14 +324,15 @@ footer a {
       flex-wrap: wrap;
 }
 
-.contact .contact-info > * {
+.contact-info > * {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin: 15px;
 }
 
-.contact .contact-info .contact-form input, .contact .contact-info .contact-form textarea {
+.contact-info .contact-form input,
+.contact-info .contact-form textarea {
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -343,7 +343,7 @@ footer a {
   margin-top: 5px;
 }
 
-.contact .contact-info .contact-form button {
+.contact-info .contact-form button {
   width: 100%;
   border: none;
   background: #fce138;
@@ -352,33 +352,33 @@ footer a {
   font-size: 16px;
 }
 
-.contact .contact-info iframe {
+.contact-info iframe {
   height: 400px;
 }
 
-.contact .contact-info div {
+.contact-info div {
   color: white;
 }
 
-.contact .contact-info p {
+.contact-info p {
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-.contact .contact-info h3 {
+.contact-info h3 {
   color: #fce138;
   margin-bottom: 25px;
   font-size: 25px;
 }
 
-.contact .contact-info address {
+.contact-info address {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
   font-style: normal;
 }
 
-.contact .contact-info a {
+.contact-info a {
   color: #fce138;
 }
 
@@ -414,27 +414,122 @@ footer a {
   text-align: right;
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-  header h1 a {
-    /* this will be applied on any screen smaller than 980px */
-    color: tomato;
+  header {
+    padding-bottom: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  .hero-cta {
+    text-align: center;
+  }
+  .section-title {
+    width: 80%;
+  }
+  .trainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 70%;
+            flex: 0 70%;
+  }
+  #google-map {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
   }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  header h1 {
-    /* this will be applied on any screen between 768px and 575px */
-    font-size: 80px;
+  header nav {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  section {
+    padding: 30px 15px;
+  }
+  .step h3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    text-align: center;
+  }
+  .step-info {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 100%;
+            flex: 2 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .step-img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 32%;
+            flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .step-text {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  header h1 {
-    /* this will be applied on any screen smaller than 575px */
-    font-size: 100px;
+  header h1 a {
+    font-size: 48px;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+  .hero-form button {
+    width: 100%;
+  }
+  .section-title {
+    width: 95%;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .trainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 100%;
+            flex: 0 100%;
+  }
+  .contact-info > * {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 100%;
+            flex: 0 100%;
+  }
+  .contact-form {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 /*# sourceMappingURL=style.css.map */

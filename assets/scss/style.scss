@@ -96,7 +96,7 @@ footer {
 // ---------------------------------------------------------
 
 .hero {
-  height: 600px;
+  // height: 600px;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   display: flex;
@@ -303,68 +303,71 @@ footer {
   h2 {
     color: #fce138;
   }
+}
 
-  .contact-info {
-  
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-    & > * {
-      flex: 1;
-      margin: 15px;
-    }
-    
-    .contact-form {
-      input, textarea {
-        border: 1px solid $clr-darkBlue;
-        display: block;
-        padding: 7px 15px;
-        font-size: 16px;
-        color: $clr-darkBlue;
-        width: 100%;
-        margin-bottom: 15px;
-        margin-top: 5px;
-      }
-      button {
-        width: 100%;
-        border: none;
-        background: $clr-yellow;
-        text-align: center;
-        padding: 15px 0;
-        font-size: 16px;
-      }
+.contact-info {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &>* {
+    flex: 1;
+    margin: 15px;
+  }
+
+  .contact-form {
+
+    input,
+    textarea {
+      border: 1px solid $clr-darkBlue;
+      display: block;
+      padding: 7px 15px;
+      font-size: 16px;
+      color: $clr-darkBlue;
+      width: 100%;
+      margin-bottom: 15px;
+      margin-top: 5px;
     }
 
-    iframe {
-      height: 400px;
-    }
-  
-    div {
-      color: white;
-    }
-  
-    p {
+    button {
+      width: 100%;
+      border: none;
+      background: $clr-yellow;
+      text-align: center;
+      padding: 15px 0;
       font-size: 16px;
-      margin-bottom: 10px;
     }
-  
-    h3 {
-      color: #fce138;
-      margin-bottom: 25px;
-      font-size: 25px;
-    }
-  
-    address {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-      font-style: normal;
-    }
-  
-    a {
-      color: #fce138;
-    }
+  }
+
+  iframe {
+    height: 400px;
+  }
+
+  div {
+    color: white;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    color: #fce138;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+
+  address {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-style: normal;
+  }
+
+  a {
+    color: #fce138;
   }
 }
 
@@ -393,22 +396,105 @@ footer {
 
 // MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 
 @media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
   
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
 
-}
+    nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  } 
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer {
+    h2, div {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .hero-cta, .hero-form { width: 100%; }
+  .hero-cta { text-align: center; }
+  .section-title { width: 80%; }
+  .trainer { flex: 0 70%; }
+  #google-map {
+    flex: 1 100%;
+  }
+
+} // END 980px media-query
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  header h1 {
-    /* this will be applied on any screen between 768px and 575px */
-    font-size: 80px;
+
+header nav {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;
   }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  header h1 {
-    /* this will be applied on any screen smaller than 575px */
-    font-size: 100px;
+
+  header h1 a {
+    font-size: 48px;
+  }
+  
+  header nav ul li a {
+    font-size: 16px;
+  }
+  .hero-form button {
+    width: 100%;
+  }
+  .section-title {
+    width: 95%;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .trainer {
+    flex: 0 100%;
+  }
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
   }
 }
