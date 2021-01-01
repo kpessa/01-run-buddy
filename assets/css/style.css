@@ -312,22 +312,54 @@ footer a {
   color: #fce138;
 }
 
+.contact .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .contact-info > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 15px;
+}
+
+.contact .contact-info .contact-form input, .contact .contact-info .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact .contact-info .contact-form button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
 .contact .contact-info iframe {
-  width: 400px;
   height: 400px;
 }
 
 .contact .contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
   color: white;
-  line-height: 1.5;
 }
 
 .contact .contact-info p {
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -338,6 +370,7 @@ footer a {
 }
 
 .contact .contact-info address {
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
   font-style: normal;
